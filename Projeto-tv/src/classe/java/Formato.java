@@ -22,13 +22,19 @@ public class Formato extends Configuracao implements ConfirmarRestauracao{
 	public void setNegar(String negar) {
 		this.negar = negar;
 	}
-	public Formato(String permitir, String negar) {
+	public Formato(String permitir, String negar, String confirmar) {
 		this.confirmar = confirmar;
 		this.negar = negar;
 	}
-	public Formato() {
+	public Formato(String confirmar2, String negar2, Object object) {
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public Formato(String confirmar2, String negar2) {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -70,8 +76,14 @@ public class Formato extends Configuracao implements ConfirmarRestauracao{
 		return false;
 	}
 	@Override
-	public   boolean Confirmacao(String confirmar, String negar) {
-		// TODO Auto-generated method stub
-		return false;
+	public   boolean Confirmacao(String confirmar , String negar) {
+		if(confirmar == null) {
+			return false;
+		}else {
+			return true;
+		}
+		
 	}
+	
+	
 }
