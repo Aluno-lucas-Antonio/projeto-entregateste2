@@ -40,7 +40,7 @@ public static void main(String[] args) {
 		if(new FuncaoAutenticacao (new Formato(confirmar,negar)).autenticarRestauracao()) {
 		   JOptionPane.showMessageDialog(null, "Restaurado");
 		}else {
-			JOptionPane.showMessageDialog(null, "Negou Restauracao");
+			JOptionPane.showMessageDialog(null, "Restauração negada");
 		}
 		
 		
