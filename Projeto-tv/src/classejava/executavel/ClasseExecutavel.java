@@ -11,7 +11,7 @@ import classeauxiliares.FuncaoAutenticacao;
 import interfaces.ConfirmarRestauracao;
 
 public class ClasseExecutavel {
-public static void main(String[] args) {            
+public static void main(String[] args, Object marca) {            
 		
 		String confirmar = JOptionPane.showInputDialog("Permitir restauracao");
 		String negar = JOptionPane.showInputDialog("Negar restauracao");
@@ -35,13 +35,32 @@ public static void main(String[] args) {
         	  JOptionPane.showMessageDialog(null, "negou");
           }*/
           
+		
+		/*Formato formato = new Formato();
+		if(marca != null) {
+			JOptionPane.showMessageDialog(null, "Não possui marca");
+		}else {
+			JOptionPane.showMessageDialog(null,"Marca existe");
+			
+		}*/
+		
+		Formato formato = new Formato();
+		
+		if(formato == null) {
+			JOptionPane.showMessageDialog(null, "Formato Não existente");
+			
+		}else {
+			JOptionPane.showMessageDialog(null, "Formato Existente");
+		}
+		
+		
           //função para permitir a restauracão
-         ConfirmarRestauracao confirmarRestauracao = new Formato(confirmar,negar);
+        /* ConfirmarRestauracao confirmarRestauracao = new Formato(confirmar,negar);
 		if(new FuncaoAutenticacao (new Formato(confirmar,negar)).autenticarRestauracao()) {
 		   JOptionPane.showMessageDialog(null, "Restaurado");
 		}else {
 			JOptionPane.showMessageDialog(null, "Restauração negada");
-		}
+		}*/
 		
 		
         /*                              
