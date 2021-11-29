@@ -11,18 +11,45 @@ import classeauxiliares.FuncaoAutenticacao;
 import interfaces.ConfirmarRestauracao;
 
 public class ClasseExecutavel {
+@SuppressWarnings({ "unused", "unused" })
 public static void main(String[] args, Object marca) {            
 		
-		String confirmar = JOptionPane.showInputDialog("Permitir restauracao");
-		String negar = JOptionPane.showInputDialog("Negar restauracao");
+		//String confirmar = JOptionPane.showInputDialog("Permitir restauracao");
+		//String negar = JOptionPane.showInputDialog("Negar restauracao");
 		
 		
+	
+	       
+	
+	List<Configuracao> configuracao = new ArrayList<Configuracao>();
+	for(int qtd = 1; qtd <= 2; qtd++){
+		String Email = JOptionPane.showInputDialog("Gmail de acesso Para redefinir tv");
+		String nome = JOptionPane.showInputDialog("Nome de usuario para acessar redefinir tv");
+		String Senha = JOptionPane.showInputDialog("Informar senha de letras para redefinir sua tv");
 		
-				
+	}
+	Configuracao acesso = new Configuracao();
+	      if(acesso.setEmail != null) {
+	    	  JOptionPane.showInputDialog("Acesso negado");
+	      }else {
+	    	  JOptionPane.showInputDialog("Acesso permitido");
+	      }
+	      if(acesso.setNome != null) {
+	    	  JOptionPane.showInputDialog("Acesso negado");
+	      }else {
+	    	  JOptionPane.showInputDialog("Acesso permitido");
+	      }
+	      if(acesso.setSenha != null) {
+	    	   JOptionPane.showInputDialog("Acesso negado");
+	    	      }else {
+	    	    JOptionPane.showInputDialog("Acesso permitido");
+	    	      }
+			
+	    
 		//List<Formato> formato = new ArrayList<Formato>();
 		
 	
-              /*   para(int qtd = 1; qtd <= 2; qtd+){
+              /*   for(int qtd = 1; qtd <= 2; qtd+){
 			String marca = JOptionPane.showInputDialog("Qual a marca de sua tv");
 	           
 		
@@ -42,7 +69,7 @@ public static void main(String[] args, Object marca) {
 		}else {
 			JOptionPane.showMessageDialog(null,"Marca existe");
 			
-		}*/
+		}
 		
 		Formato formato = new Formato();
 		
@@ -54,16 +81,16 @@ public static void main(String[] args, Object marca) {
 		}
 		
 		
-          //função para permitir a restauracão
-        /* ConfirmarRestauracao confirmarRestauracao = new Formato(confirmar,negar);
+          função para permitir a restauracão
+        ConfirmarRestauracao confirmarRestauracao = new Formato(confirmar,negar);
 		if(new FuncaoAutenticacao (new Formato(confirmar,negar)).autenticarRestauracao()) {
 		   JOptionPane.showMessageDialog(null, "Restaurado");
 		}else {
 			JOptionPane.showMessageDialog(null, "Restauração negada");
-		}*/
+		}
 		
 		
-        /*                              
+                                      
         
 		System.out.println("Opção");
 		System.out.println("1.Restaurar");

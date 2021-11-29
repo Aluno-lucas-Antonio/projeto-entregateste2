@@ -46,7 +46,9 @@ public class Formato extends Configuracao implements ConfirmarRestauracao{
 	}
 	public void setBrilho(String brilho) {
 		this.brilho = brilho;
+				
 	}
+	
 	@Override
 	public String toString() {
 		return "Formato [marca=" + marca + ", brilho=" + brilho + ", confirmar=" + confirmar + ", negar=" + negar + "]";
@@ -102,6 +104,7 @@ public class Formato extends Configuracao implements ConfirmarRestauracao{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	 
 	
 	
 
